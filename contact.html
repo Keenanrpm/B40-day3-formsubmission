@@ -1,0 +1,75 @@
+<html>
+
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <!--Nav Bar-->
+        <nav>
+            <div class="left-side">
+                <a href="index.html">
+                    <img src="image/logo.png" alt="logo" />
+                  </a>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right-side">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <!--Content-->
+        <main>
+            <div class="contact-form">
+                <div class="contact">
+                    <form action>
+                        <h3 class="title">GET IN TOUCH</h3>
+                        <div>
+                            <label for="">Name</label>
+                            <input type="text" id="input-name" required>
+                        </div>
+
+                        <div>
+                            <label for="">Email</label>
+                            <input type="text" id="input-email" required>
+                        </div>
+
+                        <div>
+                            <label for="">Phone</label>
+                            <input type="number" id="input-phone" required>
+                        </div>
+
+                        <div>
+                            <label for="">Subject</label>
+                            <select id="input-subject">
+                                <option value="" hidden></option>
+                                <option>Frontend</option>
+                                <option>Backend</option>
+                                <option>Fullstack</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="input-message">Your Message</label>
+                            <textarea id="input-message" required></textarea>
+                        </div>
+
+                        <div class="button-summit">
+                            <button id="submit" onclick="submitForm()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

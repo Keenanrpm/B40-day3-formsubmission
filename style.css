@@ -1,0 +1,274 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+nav {
+    display: flex;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 600;
+}
+
+nav .nav-left {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+nav .nav-left ul li {
+    margin-right: 50px;
+}
+
+nav .nav-left ul li img {
+    max-height: 72px;
+}
+
+nav .nav-left ul li a {
+    color: black;
+}
+
+nav .nav-left ul li a:hover {
+    color: gray;
+}
+
+nav .nav-right {
+    display:flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+nav .nav-right a {
+    padding: 5px 10px 10px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+nav .nav-right a:hover {
+    background-color: gray;
+    color: white;
+} */
+
+nav {
+    display: flex;
+    background: #f4f3f3;
+    height: 7vh;
+}
+  
+nav div {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+  
+nav div.left-side {
+    padding-left: 90px;
+}
+  
+nav div.right-side {
+    padding-right: 90px;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin-left: 40px;
+}
+  
+nav ul li {
+    display: inline;
+    margin-left: 40px;
+}
+  
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+  
+nav ul li a.list-active {
+    color: #ec4d37;
+    font-weight: 700;
+}
+  
+nav .right-side a {
+    font-size: 15px;
+    padding: 8px 20px;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    display: flex;
+    margin: 30px auto;
+  }
+  
+  main .container {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin: 30px auto;
+    padding: 60px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+  }
+  
+  /* Content */
+  main .container .left-content {
+    width: 70%;
+    margin-right: 100px;
+  }
+  
+  main .container .left-content .info {
+    width: 100%;
+  }
+  
+  main .container .left-content .info h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  main .container .left-content .info p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  main .container .left-content .info {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  main .container .left-content .download-cv {
+    margin: 50px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  main .container .left-content .download-cv span {
+    margin-right: 15px;
+  }
+  
+  main .container .left-content .download-cv span a {
+    padding: 5px 15px 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  main .container .left-content .download-cv span a:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+  main .container .left-content .social-media i {
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  main .container .right-content {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+  }
+  
+  main .container .right-content .card {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+  
+  main .container .right-content .card img {
+    max-width: 300px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  main .container .right-content .card h3 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  
+  main .container .right-content .card h5 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  /* Contact */
+  main .contact-form {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+  }
+  
+  main .contact-form .contact {
+    margin: auto;
+  }
+  
+  main .contact-form form {
+    margin: auto;
+    font: 16px;
+    font-weight: 600;
+  }
+  
+  main .contact-form form h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
+  
+  main .contact-form .contact form div input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+    border: none;
+    resize: none;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+  }
+  
+  main .contact-form .contact form button {
+    margin-top: 10px;
+    padding: 5px 15px 8px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    float: right;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  
+  main .contact-form .contact form button:hover {
+    background-color: gray;
+    color: white;
+  }
